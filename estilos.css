@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.padre{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background:   linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+span{
+    width: 40%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+}
+#imgdesktop{
+    display: none;
+}
+.titulo::before{
+    content:"We're";
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.titulo{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 50px 0 0 0;
+    color: hsl(0, 6%, 24%);
+    line-height: 42px;
+}
+.articulo_y_boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+.parrafo{
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+}
+input:focus{
+    outline: 1px solid hsl(0, 100%, 98%);
+}
+.input_correo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#signo_error{
+    margin-right: 15px;
+    position: absolute;
+    left: 66%;
+    bottom: 80px;
+    display: none;
+}
+#correo{
+    width: 90%;
+    margin: 25px 0;
+    padding: 14px 0 14px 20px;
+    border-radius: 25px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid hsla(0, 36%, 70%, 0.582);
+    color: hsl(0, 6%, 24%);
+}
+#correo::placeholder{
+    color: hsla(0, 36%, 70%, 0.651);
+    font-size: 14px;
+    background-color: #ffffff00;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.input_correo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.boton{
+    width: 65px;
+    height: 30px;
+    padding: 8px 0;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 120px;
+    bottom: 70px;
+    box-shadow: 0px 12px 25px hsla(0, 74%, 74%, 0.37);
+}
+.msj_advertencia{
+    width: 85%;
+    display: none;
+    justify-content: flex-start;
+    color: hsla(0, 66%, 60%, 0.897);
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    margin-top: -76px;
+}
+
+@media screen and (min-width: 1440px){
+    .padre{
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 0;
+    padding: 100px 0 0 70px;
+    background: radial-gradient(circle at bottom right, hsl(0, 1%, 100%), 700px, hsl(0, 64%, 95%), 55%, hsl(0, 0%, 100%), 70%, hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+    }
+    span{
+        width: 25%;
+        height: 0;
+        display: flex;
+        margin: 0 0 0 50px;
+        padding: 0px 0 0 90px;
+        position: relative;
+    }
+    .logo_empresa svg{
+        width: 158px;
+        position: relative;
+       top: 0px;
+    }
+    main section{
+        display: flex;
+        width: 50%;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+    }
+    #imgmovil{
+        display: none;
+    }
+ 
+    #imgdesktop{
+        width: 36%;
+        height: 95vh;
+        display: flex;
+        align-self: flex-end;
+        margin: -100px -5px 0 0;
+        padding: 0;
+    }
+    .articulo_y_boton{
+        width: 60%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0 0 125px;
+        margin: 0;
+    }
+    .titulo{
+        text-align: left;
+        margin: 0px;
+        width: 100%;
+        font-size: 65px;
+        line-height: 64px;
+        letter-spacing: 10px;
+    }
+    
+    #signo_error{
+        margin-right: 15px;
+        position: absolute;
+        left: 70%;
+        bottom: 56px;
+    }
+.boton{
+    width: 85px;
+    left: 172px;
+    bottom: 45px;
+    box-shadow: 0px 12px 25px hsla(0, 74%, 74%, 0.37);
+}
+#correo{
+    width: 90%;
+    margin: 25px 0 0 0;
+    padding: 14px 0 14px 20px;
+    border-radius: 25px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid hsla(0, 36%, 70%, 0.582);
+    color: hsl(0, 6%, 24%);
+}
+
+    .msj_advertencia{
+        width: 85%;
+        display: none;
+        justify-content: flex-start;
+        color: hsla(0, 66%, 60%, 0.897);
+        font-weight: 400;
+        font-size: 13px;
+        text-align: left;
+        margin-top: -50px;
+    }
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
